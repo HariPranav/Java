@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc =new Scanner (System.in);
+        int fact=1;
+        System.out.println("Input the maximum Numbers to find the factorial");
+        int n=sc.nextInt();
+        System.out.println("THe factorial of the given Numbers is");
+        for(int i=1;i<=n;i++)
+        {
+            fact=fact*i;
+            System.out.println(fact);
+        }
+    }
+	}
