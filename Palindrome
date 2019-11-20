@@ -1,0 +1,43 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+/* logic :
+    1.  copy the Number to a different variable 
+    2. declare a while loop 
+    3. find the the modulus of the Number
+    4. 
+*/
+import java.util.*;
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner (System.in);
+      System.out.println ("Input the  Number to find the palindrome");
+    int n = sc.nextInt ();
+ int reversedInteger = 0, remainder;
+    
+    int k = n;
+    while (n != 0)
+      {
+
+	
+        remainder = n%10;
+        reversedInteger = reversedInteger*10 + remainder;
+        n /= 10;
+      }
+      
+    if (k == reversedInteger)
+      {
+	    System.out.println ("palindrome");
+        }
+    else
+      {
+	    System.out.println ("Not palindrome");
+      }
+  }
+}
