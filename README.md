@@ -8,7 +8,7 @@ Some important observations :
   - > length is used to find the size of the **array**  and not an *integer* value
       Eg : a[50] , int size = a.length;
   
-  - > length() is used to find the size of the **String or the String Builder Class
+  - > length() is used to find the size of the **String** or the String Builder Class
       Eg : a , int size = a.length();
       
  
