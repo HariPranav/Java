@@ -1,1 +1,41 @@
 
+import java.util.*;
+import java.lang.Math;
+public class Main
+{
+  public static void main (String[]args)
+  {
+    Scanner sc = new Scanner (System.in);
+      System.out.
+      println
+      ("Input the number of digits in the  Number to find the armstrong");
+    int no = sc.nextInt ();
+      System.out.println ("Number to find the armstrong");
+    int n = sc.nextInt ();
+    int size;
+
+
+    int remainder = 0, originalInteger;
+
+    int k = n;
+    double sum = 0;
+    while (n != 0)
+    {
+
+
+	    remainder = n % 10;
+	    n /= 10;
+	    sum = sum + Math.pow (remainder, no);
+    }
+
+    System.out.println (sum);
+    if (sum == k)
+    {
+	System.out.println ("armstrong");
+    }
+    else
+      {
+	System.out.println ("Not armstrong");
+      }
+  }
+}
