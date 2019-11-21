@@ -1,0 +1,25 @@
+import java.util.*;
+import java.io.*;
+
+class JavaTest
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        InputStreamReader r=new InputStreamReader(System.in);    
+        BufferedReader br=new BufferedReader(r); 
+        System.out.println("Input the year to check leap or not");
+        int year=sc.nextInt();
+
+        if(year%4 == 0 && year %100 ==0 || year%400==0)
+        {
+            System.out.print("Leap");
+        }
+        else
+        {
+                System.out.println("Not a leap Year");
+        }
+
+        sc.close();   
+    }
+}   
