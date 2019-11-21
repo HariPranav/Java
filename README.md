@@ -20,3 +20,18 @@ Some important observations :
   The main issue was that readLine does not wait for the user input and completes the execution of the code .
   
   
+3. Difference bw BufferedReader and Scanner class :
+
+ - > Type of Data
+                - > BR can read only strings and it need not be parsed
+                - > Sc can read all types of data and it can be parsed
+ - > Memory 
+          - > BR has more memory i.e 8Kb
+          - > Sc has lesser memory i.e 1Kb
+          
+ - > When to use 
+ 
+          - > Sc is used when we read small amounts of data
+          - > BR is used when we read large amount of data
+          
+ - > BR is synchronised and it throws exceptions where the SC is not hence we prefer BR and it is better for multithreading applications 
