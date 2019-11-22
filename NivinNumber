@@ -1,0 +1,32 @@
+import java.util.*;
+import java.io.*;
+
+class JavaTest
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in); 
+        System.out.println("Input the number to check nivin or not");
+        int number=sc.nextInt();
+        int rem;
+        int k=number;
+        int sum=0;
+        while(number!=0)
+        {
+            rem=number %10;
+            number=number/10;
+            sum=sum+rem;
+        }
+        System.out.println(sum);
+        if(k%sum==0)
+        {
+            System.out.print("Nivin");
+        }
+        else
+        {
+                System.out.println("Not a nivin");
+        }
+
+        sc.close();   
+    }
+}   
