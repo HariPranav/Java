@@ -1,5 +1,5 @@
 # Java
-This repository holds the practise quetions and the logic to solve them
+This repository holds the practise questions and the logic to solve them
 
 Some important observations :
 
