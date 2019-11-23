@@ -41,3 +41,9 @@ Some important observations :
   - > The String class is *immuatable* in nature and is *fixed in length*
   - > The *StringBuffer* class in java is *mutable* in nature and is *not fixed in length* , The main difference b/w StringBuilder and                StringBuffer is That the StringBuffer is *synchronised* and is *Thread Safe* when compared to StringBuilder
   - > *The StringBuilder* class in java is *mutable* in nature and the *length can also be altered*
+  
+  
+  ### toString() 
+  
+  - > Every object created in java will have a toString() method which prints the class name along with the hashcode .
+  - > But if we want the actual value of the string object we must overide the toString() method .
