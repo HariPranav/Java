@@ -1,0 +1,45 @@
+import java.util.*;
+
+class Neon{
+    public static void main(String[] args) {
+        
+        System.out.println("Input the number to find neon or not");
+
+        Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+        int k=n;
+            int sum=0;
+            int check=0;
+        int rem;
+         
+        while(n!=0)
+        {
+            rem=n%10;
+
+            n=n/10;
+            sum = sum + rem*rem;
+        }
+
+        System.out.println(sum);
+        
+        n=sum;
+
+        while(n!=0)
+        {
+                rem=n%10;
+                n=n/10;
+                check=check+rem;
+        }
+
+        System.out.println(check);
+
+        if(check==k)
+        {
+            System.out.println("neon no");
+        }
+        else{
+            System.out.println("not neon no");
+        }
+    }
+}
