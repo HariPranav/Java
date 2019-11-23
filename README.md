@@ -35,3 +35,9 @@ Some important observations :
           - > BR is used when we read large amount of data
           
  - > BR is synchronised and it throws exceptions where the SC is not hence we prefer BR and it is better for multithreading applications 
+
+# Strings
+
+  - > The String class is *immuatable* in nature and is *fixed in length*
+  - > The *StringBuffer* class in java is *mutable* in nature and is *not fixed in length* , The main difference b/w StringBuilder and                StringBuffer is That the StringBuffer is *synchronised* and is *Thread Safe* when compared to StringBuilder
+  - > *The StringBuilder* class in java is *mutable* in nature and the *length can also be altered*
