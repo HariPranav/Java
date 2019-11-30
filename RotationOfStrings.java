@@ -16,7 +16,7 @@
   
   Check(String s,String a)
   {
-    if(a==b && (str1+str1).charAt[i]==str2.charAt[i])
+    if(a==b && (str1+str1).indexOf(str2)!=-1)
     return 1;
   }
   
