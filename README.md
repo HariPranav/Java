@@ -11,6 +11,11 @@ Some important observations :
   - > length() is used to find the size of the **String** or the String Builder Class
       Eg : a , int size = a.length();
       
+ 1.a The difference between next() and nextLine()
+    
+   ->next()  : It the input with **space** as a delimiter whereas
+   ->nextLine() : It  takes the input with **enter** as the delimiter
+      
  
 2. Difference bw read() and readLine() for  string input 
 
