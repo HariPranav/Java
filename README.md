@@ -65,7 +65,7 @@ Some important observations :
       String s1="Hi";
       String s2=s1.reverse();
       
-   This gives an error as the **object** of **string** class cannot be altered 
+   This gives an error as the **object** of **string** class **(s1)** cannot be altered 
    
    Hence we have to use the String Builder and the String Buffer Classes which allow us to modify the strings and use them
    
