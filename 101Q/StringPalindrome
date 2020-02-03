@@ -1,0 +1,27 @@
+import java.util.*;
+
+class datatypesToString
+{
+    public static void main(String[] args) {
+        
+        int a =121;
+
+        String s1=Integer.toString(a);
+        System.out.println(a);
+        String s2=new StringBuilder(s1).reverse().toString();
+        
+        System.out.println(s2);
+
+        if(s1.compareTo(s2)==0)
+        {
+            System.out.println("Equal");
+        }
+        else
+        {
+            System.out.println("Not equal");
+        }
+
+
+
+    }
+}
