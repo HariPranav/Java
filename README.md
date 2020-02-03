@@ -56,3 +56,21 @@ Some important observations :
   ## System
   
     we need to use java.util.lang , to access System.out.println
+    
+  ## String Builder and String Buffer Class in Java
+  
+     The String class in java is immutable by default i.e once the object of the class is created it cannot be changed
+     
+     eg: 
+      String s1="Hi";
+      String s2=s1.reverse();
+      
+   This gives an error as the **object** of **string** class cannot be altered 
+   
+   Hence we have to use the String Builder and the String Buffer Classes which allow us to modify the strings and use them
+   
+   https://javadevnotes.com/java-integer-to-string-examples/
+   
+   https://raw.githubusercontent.com/HariPranav/Java/master/strings.png
+   
+   https://youtu.be/gy1uve2BwG8
