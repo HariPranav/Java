@@ -74,3 +74,5 @@ Some important observations :
    https://raw.githubusercontent.com/HariPranav/Java/master/strings.png
    
    https://youtu.be/gy1uve2BwG8
+   
+   https://www.quora.com/Why-dont-we-have-a-reverse-function-in-java-lang-String
