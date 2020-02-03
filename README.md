@@ -76,3 +76,21 @@ Some important observations :
    https://youtu.be/gy1uve2BwG8
    
    https://www.quora.com/Why-dont-we-have-a-reverse-function-in-java-lang-String
+   
+      ##CODE
+        int a =121;
+
+        String s1=Integer.toString(a);
+        System.out.println(a);
+        String s2=new StringBuilder(s1).reverse().toString();
+        
+        System.out.println(s2);
+
+        if(s1.compareTo(s2)==0)
+        {
+            System.out.println("Equal");
+        }
+        else
+        {
+            System.out.println("Not equal");
+        }
