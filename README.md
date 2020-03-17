@@ -94,3 +94,16 @@ Some important observations :
         {
             System.out.println("Not equal");
         }
+        
+## String Args[] in java
+
+  We can pass command line arguments during the execution of the program using the args 
+  
+  eg : psvm(String []args)
+      {
+        System.out.println("the command line args are" + a[0]);
+       }
+       
+       $ javac file1.java -> generates the .class fike
+       $ java file1 (send the args) 10
+       $ the command line args are 10
