@@ -107,3 +107,31 @@ Some important observations :
        $ javac file1.java -> generates the .class fike
        $ java file1 (send the args) 10
        $ the command line args are 10
+
+## Pointers vs References
+
+  C++ Note: Many people mistakenly believe that Java obect variables behave like C++ references. Butin C++ there are no null references, and references cannot be assigned. You should think of Java object variables as analolous to object pointers in C++. For example,
+    Date birthday; // Java
+is really the same as
+    Date* birthday // C++
+Once you make this association, everything falls into place. Of course, a Date* pointer isn't initialised until you initialise it with a call to new. The syntax is almost the same in C++ and Java.
+    Date* birthday = new Date(); // C++
+If you copy one variable to another, then both variables refer to the same date—they are pointers to the same object. The equivalent of the Java null reference is the C++ NULL pointer.
+All Java objects live on the heap. When an object contains another object variable, that variable still contains just a pointer to yet another heap object.
+In C++, pointers make you nervous because they are so error prone. It is easy to create bad pointers or to mess up memory management. In Java, these problems simply go away. If you use an unitialised pointer, the runtime system will reliably generate a runtime error instead of producing random results. You don't worry about memory management, because the garbage collector takes care of it.
+
+
+Java doesn’t have pointers; Java has references.
+Reference: A reference is a variable that refers to something else and can be used as an alias for that something else.
+Pointer: A pointer is a variable that stores a memory address, for the purpose of acting as an alias to what is stored at that address.
+So, a pointer is a reference, but a reference is not necessarily a pointer. Pointers are a particular implementation of the concept of a reference, and the term tends to be used only for languages that give you direct access to the memory address.
+
+Let’s discuss some keypoints about pointers and references in context of C/C++ and Java:
+
+    C/C++ allows pointer arithmetic but Java Pointers (References) not: The term “pointer” is strongly associated with the C/C++ concept of pointers, which are variables which store memory addresses and can be modified arithmetically to point to arbitrary addresses.
+    In Java, pointers only exist as an implementation detail for References. A copy of the reference is copied to the stack of a called function, pointing to the same object as the calling function and allowing you to manipulate that object. However you cannot change the object the calling function refers to.
+    Java doesn’t support pointer explicitly,  But java uses pointer implicitly: Java use pointers for manipulations of references but these pointers are not available for outside use. Any operations implicitly done by the language are actually NOT visible.
+    Pointers can do arithmetic, References can’t: Memory access via pointer arithmetic is fundamentally unsafe and for safe guarding, Java has a robust security model and disallows pointer arithmetic for this reason. Users cannot manipulate pointers no matter what may ever is the case.
+    Pointing objects: In C, we can add or subtract address of a pointer to point to things. In Java, a reference points to one thing only. You can make a variable hold a different reference, but such c manipulations to pointers are not possible.
+    References are strongly typed:  Type of a reference is much more strictly controlled in Java than the type of a pointer is in C. In C you can have an int* and cast it to a char* and just re-interpret the memory at that location. That re-interpretation doesn’t work in Java: you can only interpret the object at the other end of the reference as something that it already is (i.e. you can cast a Object reference to String reference only if the object pointed to is actually a String).
+    Manipulation of pointers can be dangerous:  On one hand, it can be good and flexible to have control over pointers by user but it may also prove to be dangerous. They may turn out to be big source of problems, because if used incorrectly they can easily break assumptions that your code is built around. And it’s pretty easy to use them incorrectly.
